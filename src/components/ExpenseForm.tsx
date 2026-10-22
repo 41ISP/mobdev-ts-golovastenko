@@ -8,7 +8,7 @@ export default function ExpenseForm() {
   const [title, setTitle] = useState<string>('');
   const [amount, setAmount] = useState<string>('');
   const {addExpense} = useExpensesStore()
-  const {category, setCategory} = useState<TCategory>('food')
+  const [category, setCategory]= useState<TCategory>('food')
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
